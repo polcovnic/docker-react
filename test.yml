@@ -1,0 +1,14 @@
+spec:
+  rules:
+     -host: mysite.com/dir1/
+      http:
+        paths:
+        -backend:
+          serviceName: myapp
+          servicePort: 8080
+     -host: mysite.com/dir2/
+      http:
+        paths:
+        -backend:
+          serviceName: myapp2
+          servicePort: 8081
